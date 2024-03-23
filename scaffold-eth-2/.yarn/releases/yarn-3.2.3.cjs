@@ -154,6 +154,7 @@ Make sure that all grammar rule definitions are done before 'performSelfAnalysis
 <!-- This is a generated file -->
 <!DOCTYPE html>
 <meta charset="utf-8">
+
 <style>
   body {
     background-color: hsl(30, 20%, 95%)
