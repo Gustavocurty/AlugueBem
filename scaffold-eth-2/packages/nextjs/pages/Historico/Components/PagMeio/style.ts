@@ -1,63 +1,39 @@
 import styled from "styled-components";
 
-
-export const ContainerMeio = styled.div `
-    background-color: #1D92C5;
-    width: 100%;
-`;
-
 export const Container = styled.div `
     background-image: url('./assets/home/bg2.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    border-radius: 8cqw 0 0 0;
     width: 100%;
+    height: 100%;
+
+`;
+
+export const ContentContainer = styled.div `
+    display: flex;
+    width: 100%;
+    height: 100%;
 `;
 
 export const MainContainer = styled.div `
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    margin-left: 220px;
+    margin-top: 120px;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 `;
 
-
-
-export const TituloMeio = styled.p`
-    color: #28AAE3;
-    font-size: 40px;
-    font-weight: bold;
-`
-
-export const ConjuntoTexto = styled.div`
-    width: 650px;
-    margin-left: 65px;
-`
-
-export const Texto = styled.p`
-    font-weight: bold;
-    color: #A6A6A6;
-    text-align: justify;
-`
-
-export const Image = styled.img `
-     
-`;
-
-export const Botao = styled.button`
-    margin-top: 30px;
-    padding: 0px 10px;
-    width: 180px;
-    background-color: #28AAE3;
-    border-radius: 30px;
-    font-weight: bold;
+export const TextContainer = styled.div `
     display: flex;
-    font-size: 18px;
-    justify-content:space-around ;
-    p{
-        color: #fff;
-    }
 `;
+
+
+export const Title = styled.p `
+    font-size: 40px;
+    color: #28AAE3;
+    font-weight: bold;
+`;
+

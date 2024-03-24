@@ -3,7 +3,6 @@ import React from 'react'
 import Banner from '../../../components/banner'
 import Cards from '~~/components/cards'
 import PagMeio from '../Components/PagMeio'
-import PagBaixo from '../Components/PagBaixo'
 
 import {
     Content,

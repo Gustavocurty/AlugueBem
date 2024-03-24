@@ -1,31 +1,34 @@
 import React from 'react'
 import Image from "next/image";
-import Cripto from "../../../../public/assets/home/ImgCripto.svg"
+import Feito from '../Feito';
 
- import {
-      ContainerMeio, TituloMeio, ConjuntoTexto, Texto, Container, Botao, MainContainer
- } from './style'
 
+import {
+    Container, ContentContainer, Title,  MainContainer, TextContainer
+} from './style'
 
 
 const PagMeio: React.FC = () =>{
     return(
-        <ContainerMeio>
-            <Container>
+        <Container>
+            <ContentContainer>
                 <MainContainer>
-                    <Image alt='Imagem criptomoeda' src={Cripto} width={400} height={400}/>
-                    <ConjuntoTexto>
-                        <TituloMeio> Receba seu aluguel em cripto, de forma fácil e segura </TituloMeio>
-                        <Texto>
-                        Alugue Bem é uma plataforma que facilita o recebimento de aluguéis em criptomoedas. Os locatários pagam em reais, convertidos para cripto e divididos entre locador e administradora. O valor do locador é enviado para sua carteira em cripto, enquanto o da administradora é convertido de volta para reais e depositado via PIX. Simplificando o processo de pagamento de aluguéis com criptomoedas.
-                        </Texto>
-                        <Botao> <Texto>Começar</Texto><Texto>&#8250;</Texto></Botao>
-                    </ConjuntoTexto>
+                    <TextContainer>
+                        <Title>Histórico</Title>
+                    </TextContainer>
+                    <Feito title="Gustavo" data="22/03/2024" valor="+ R$ 5,000" transf="Transferencia feita para 1234567"/>
+                    <Feito title="Carolina" data="22/03/2024" valor="+ R$ 50,000" transf="Transferencia feita para 1234567"/>
+                    <Feito title="João Victor" data="22/03/2024" valor="+ R$ 3,000" transf="Transferencia feita para 1234567"/>
+                    <Feito title="Estevão" data="22/03/2024" valor="+ R$ 3,000" transf="Transferencia feita para 1234567"/>
+                    <Feito title="Daniel" data="22/03/2024" valor="+ R$ 35,000" transf="Transferencia feita para 1234567"/>
+                    <Feito title="Serra Jr." data="22/03/2024" valor="+ R$ 100,000" transf="Transferencia feita para 1234567"/>
+                    <Feito title="Gustavo" data="22/03/2024" valor="+ R$ 5,000" transf="Transferencia feita para 1234567"/>
+
                 </MainContainer>
-            </Container>
-        </ContainerMeio>
+
+            </ContentContainer>
+        </Container>
     )
 }
 
 export default PagMeio
-
