@@ -1,32 +1,25 @@
 import React from 'react'
 import Image from "next/image";
-import Cripto from "../../../../public/assets/home/ImgCripto.svg"
 
- import {
-      ContainerMeio, TituloMeio, ConjuntoTexto, Texto, Container, Botao, MainContainer
- } from './style'
-
+import {
+    Container, ContentContainer, TextContainer, Title, Text, MainContainer,
+} from './style'
 
 
 const PagMeio: React.FC = () =>{
     return(
-        <ContainerMeio>
-            <Container>
+        <Container>
+            <ContentContainer>
                 <MainContainer>
-                    <Image alt='Imagem criptomoeda' src={Cripto} width={400} height={400}/>
-                    <ConjuntoTexto>
-                        <TituloMeio> Receba seu aluguel em cripto, de forma fácil e segura </TituloMeio>
-                        <Texto>
-                        Alugue Bem é uma plataforma que facilita o recebimento de aluguéis em criptomoedas. Os locatários pagam em reais, convertidos para cripto e divididos entre locador e administradora. O valor do locador é enviado para sua carteira em cripto, enquanto o da administradora é convertido de volta para reais e depositado via PIX. Simplificando o processo de pagamento de aluguéis com criptomoedas.
-                        </Texto>
-                        <Botao>Começar    &#8250;</Botao>
-                    </ConjuntoTexto>
+                    <TextContainer>
+                        <Title>Não importa onde você esteja,</Title>
+                        <Text>nossos serviços facilitam o processo de receber seus pagamentos de aluguel. E o melhor de tudo, você não precisa se preocupar com as flutuações do mercado, pois seu aluguel é convertido e enviado em criptomoedas para sua carteira. Com Alugue Bem, você desfruta da conveniência e da segurança de receber seus aluguéis em criptomoedas, tornando todo o processo mais eficiente e moderno.</Text>
+                    </TextContainer>
+                    <Image alt="Crypto Image" src="./assets/home/carteira.svg" width={500} height={500}/>
                 </MainContainer>
-            </Container>
-        </ContainerMeio>
+            </ContentContainer>
+        </Container>
     )
 }
 
 export default PagMeio
-
-

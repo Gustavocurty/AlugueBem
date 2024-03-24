@@ -19,7 +19,7 @@ const PagMeio: React.FC = () =>{
                         <Texto>
                         Alugue Bem é uma plataforma que facilita o recebimento de aluguéis em criptomoedas. Os locatários pagam em reais, convertidos para cripto e divididos entre locador e administradora. O valor do locador é enviado para sua carteira em cripto, enquanto o da administradora é convertido de volta para reais e depositado via PIX. Simplificando o processo de pagamento de aluguéis com criptomoedas.
                         </Texto>
-                        <Botao>Começar    &#8250;</Botao>
+                        <Botao> <Texto>Começar</Texto><Texto>&#8250;</Texto></Botao>
                     </ConjuntoTexto>
                 </MainContainer>
             </Container>
@@ -28,5 +28,4 @@ const PagMeio: React.FC = () =>{
 }
 
 export default PagMeio
-
 

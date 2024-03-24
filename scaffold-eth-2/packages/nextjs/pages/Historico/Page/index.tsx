@@ -11,7 +11,8 @@ import {
 const Historico: React.FC = () =>{
     return(
         <Content>
-            <Banner image="./assets/historico/historicoImg.svg" text="Histórico"/>
+            <Banner imageLogo="./assets/historico/bannerH.svg" textLogo="Página Histórico" image="./assets/historico/historicoImg.svg" text="Histórico"/>
+            <PagMeio />
         </Content>
     )
 }

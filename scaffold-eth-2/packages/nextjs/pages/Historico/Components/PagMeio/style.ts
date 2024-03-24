@@ -48,10 +48,16 @@ export const Image = styled.img `
 `;
 
 export const Botao = styled.button`
-    padding: 12px 17px;
+    margin-top: 30px;
+    padding: 0px 10px;
+    width: 180px;
     background-color: #28AAE3;
-    border-radius: 25px;
-    color: #fff;
+    border-radius: 30px;
     font-weight: bold;
+    display: flex;
     font-size: 18px;
+    justify-content:space-around ;
+    p{
+        color: #fff;
+    }
 `;

@@ -20,9 +20,9 @@ import { appChains } from "~~/services/web3/wagmiConnectors";
 import Home from '../pages/Home/Page'
 import Perfil from '../pages/Perfil/Page'
 import Historico from '../pages/Historico/Page'
-// import Transferencia from '../pages/Transferencia/Page'
+import Transferir from '../pages/Perfil copy/Page'
 
-const ScaffoldEthApp = ({ children }: { children: React.ReactNode }) => {
+const ScaffoldEthApp = ({ children }: { children?: React.ReactNode }) => {
   const price = useNativeCurrencyPrice();
   const setNativeCurrencyPrice = useGlobalState(state => state.setNativeCurrencyPrice);
 
@@ -37,15 +37,15 @@ const ScaffoldEthApp = ({ children }: { children: React.ReactNode }) => {
       <div className="flex flex-col min-h-screen bg-white">
       <Router basename="">
           <Header />
-          <main className="relative flex flex-col flex-1">
-          <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path='/perfil' element={<Perfil />} />
-            <Route path='/historico' element={<Historico />} />
-            {/* <Route path='/transferencia' element={<Transferencia />} /> */}
-          </Routes>
-            {children}
-          </main>
+            <main className="relative flex flex-col flex-1">
+              <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path='/perfil' element={<Perfil />} />
+                <Route path='/historico' element={<Historico />} />
+                <Route path='/transferencia' element={<Transferir />} />
+              </Routes>
+                {children}
+            </main>
           <Footer />
         </Router>
       </div>
