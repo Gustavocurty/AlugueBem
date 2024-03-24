@@ -17,7 +17,8 @@ export const ContainerTransferencia = styled.div `
 `;
 
 export const Titulo = styled.h1 `
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 30px;
     font-weight: bold;
     font-size: 36px;
     color: #1D92C5;
@@ -83,5 +84,6 @@ export const Button = styled.button `
     background-color: #1D92C5;
     font-weight: bold;
     font-size: 24px;
+    color: #fff;
 
 `;

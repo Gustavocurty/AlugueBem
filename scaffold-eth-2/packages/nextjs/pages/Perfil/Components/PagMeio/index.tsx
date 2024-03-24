@@ -1,8 +1,9 @@
 import React from 'react'
 import Image from "next/image";
+import MultipleCards from '../Card';
 
 import {
-    Container, ContentContainer, TextContainer, Title, Text, MainContainer,
+    Container, ContentContainer, TextContainer, Title, Text, MainContainer, RealContainer, SubText, SmallText, MoneyContainer
 } from './style'
 
 
@@ -12,10 +13,16 @@ const PagMeio: React.FC = () =>{
             <ContentContainer>
                 <MainContainer>
                     <TextContainer>
-                        <Title>Não importa onde você esteja,</Title>
-                        <Text>nossos serviços facilitam o processo de receber seus pagamentos de aluguel. E o melhor de tudo, você não precisa se preocupar com as flutuações do mercado, pois seu aluguel é convertido e enviado em criptomoedas para sua carteira. Com Alugue Bem, você desfruta da conveniência e da segurança de receber seus aluguéis em criptomoedas, tornando todo o processo mais eficiente e moderno.</Text>
+                        <Title>Olá, Gustavo!</Title>
                     </TextContainer>
-                    <Image alt="Crypto Image" src="./assets/home/carteira.svg" width={500} height={500}/>
+                    <MoneyContainer>
+                        <RealContainer>
+                            <Text>R$ 1.000.000</Text>
+                            <SubText>BRL</SubText>
+                        </RealContainer>
+                        <SmallText>Valor total da conta</SmallText>
+                    </MoneyContainer>
+                    <MultipleCards />
                 </MainContainer>
             </ContentContainer>
         </Container>

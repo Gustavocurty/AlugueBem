@@ -94,7 +94,7 @@ export const Header = () => {
   return (
     <HeaderStyle>
       <NavbarStart>
-        <Link href="/" passHref>
+        <Link href="/">
           <LogoContainer>
             <Image alt="Logo Aluge Bem" src="./assets/home/Logo.svg" width={150} height={150} className="p-4"/>
           </LogoContainer>

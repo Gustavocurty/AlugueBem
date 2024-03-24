@@ -2,7 +2,7 @@ import React from 'react'
 
 import Banner from '../../../components/banner'
 import PagMeio from '../Components/PagMeio'
-// import Cards from '../../../components/cards'
+import Cards from '~~/components/cards'
 
 import {
     Content,
@@ -12,7 +12,8 @@ const Perfil: React.FC = () =>{
     return(
         <Content>
             <Banner imageLogo="./assets/perfil/logoP.svg" textLogo="Página Perfil" image="./assets/perfil/imgP.svg" text="Perfil"/>
-            {/* <Cards /> */}
+            <Cards />
+            <PagMeio />
         </Content>
     )
 }
